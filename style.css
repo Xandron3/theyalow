@@ -1,0 +1,763 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Asap Regular";
+  src: url("assets/fonts/Asap-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Segoe WP";
+  src: url("assets/fonts/SegoeWP.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe WP Light";
+  src: url("assets/fonts/segoe-wp-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans Regular";
+  src: url("assets/fonts/PTS55F.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1300px;
+}
+
+.wrapper {
+  max-width: 1022px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 566px;
+  background-image: url("assets/img/header/background.png");
+}
+
+/* Hero Section -> Header */
+
+.header {
+  padding-top: 28px;
+  max-width: 1022px;
+  height: 83px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* Hero Section -> Header -> Logo */
+
+.company-logo {
+  display: flex;
+  margin-left: 1px;
+  align-items: center;
+}
+
+.company-name {
+  font-family: "Lucida Sans", serif;
+  font-style: italic;
+  font-weight: 400;
+  margin: 12px 0 0 4px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-size: 41px;
+  color: white;
+}
+
+/* Hero Section -> Header -> NavBar */
+
+.navigation {
+  width: 453px;
+  height: 41px;
+  margin-right: 1px;
+  margin-bottom: -1px;
+  background-color: #f5c506;
+  box-shadow:
+    -4px -5px rgba(245, 197, 6, 0.27),
+    -8px -8px rgba(245, 197, 6, 0.27);
+}
+
+.navigation-list {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.navigation-item {
+  font-size: 17px;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+
+.navigation-item:not(:last-of-type) {
+  border-right: 1px solid #9b7d08;
+}
+
+.navigation-link {
+  display: inline-flex;
+  text-decoration: none;
+  color: #9b7d08;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  font-family: "Segoe WP", serif;
+  font-weight: 500;
+}
+
+.navigation-link:hover {
+  background-color: #f7d859;
+}
+
+.navigation-item span {
+  margin-top: 11px;
+  margin-left: 9px;
+  line-height: 17px;
+}
+
+.navigation-item img {
+  margin-top: 11px;
+}
+
+.navigation-item.about {
+  width: 150px;
+}
+
+.navigation-item.about img {
+  margin-left: 39px;
+}
+
+.navigation-item.services {
+  width: 110px;
+}
+
+.navigation-item.services img {
+  margin-left: 14px;
+}
+
+.navigation-item.contact img {
+  margin-left: 17px;
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 0;
+    margin: 0;
+    height: 62px;
+  }
+
+  .company-logo {
+    margin: 0;
+    min-width: 186px;
+    height: 100%;
+    background-color: #474747;
+  }
+
+  .company-image {
+    width: 38px;
+    height: 38px;
+    margin-left: 13px;
+  }
+
+  .company-name {
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+  }
+
+  .navigation {
+    margin: 0;
+    height: 100%;
+    box-shadow: unset;
+  }
+
+  .navigation-item {
+    box-sizing: border-box;
+    font-size: 19px;
+  }
+
+  .navigation-item img {
+    margin-top: 20px;
+  }
+
+  .navigation-item span {
+    margin-top: 22px;
+    letter-spacing: 0.5px;
+  }
+
+  .navigation-item.about {
+    min-width: 172px;
+  }
+
+  .navigation-item.about img {
+    width: 24px;
+    height: 22px;
+    margin-left: 22px;
+  }
+
+  .navigation-item.about span {
+    margin-left: 12px;
+  }
+
+  .navigation-item.services {
+    min-width: 132px;
+  }
+
+  .navigation-item.services img {
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+  }
+
+  .navigation-item.services span {
+    margin-left: 6px;
+  }
+
+  .navigation-item.contact img {
+    width: 28px;
+    height: 21px;
+    margin-left: 12px;
+  }
+}
+
+/* Hero Section -> Slider */
+
+.slider-section {
+  width: 100%;
+  height: 455px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider-button {
+  width: 34px;
+  height: 57px;
+  margin-bottom: 20px;
+  background-color: #c6a40b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-button.previous img {
+  padding-right: 3px;
+}
+
+.slider-button.next {
+  background-color: #f5c506;
+}
+
+.slider-button.next img {
+  margin-left: 3px;
+  margin-bottom: 2px;
+}
+
+.slider-body {
+  width: 100%;
+  margin-bottom: 14px;
+  display: inline-flex;
+}
+
+.slider-video {
+  margin-left: 118px;
+}
+
+.slider-slogan {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Asap Regular", serif;
+  font-size: 63px;
+  letter-spacing: 0.01em;
+}
+
+.slider-slogan span:nth-child(1) {
+  color: #e8c430;
+  margin-top: 70px;
+  margin-left: 90px;
+}
+
+.slider-slogan span:nth-child(2) {
+  line-height: 63px;
+  margin-top: 6px;
+  margin-left: 50px;
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    height: 389px;
+  }
+
+  .slider-section {
+    height: 327px;
+  }
+
+  .slider-body {
+    margin: 0;
+  }
+
+  .slider-button {
+    display: none;
+  }
+
+  .slider-slogan {
+    display: none;
+  }
+
+  .slider-video {
+    margin: 0;
+    width: 640px;
+    height: 327px;
+  }
+}
+
+/* Main -> Features */
+
+.features-section {
+  z-index: 2;
+  position: relative;
+  height: 212px;
+  background-color: white;
+  background-image: url("assets/img/features/background.png");
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+.features-section > .wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border-left: 1px solid #d4d4d4;
+}
+
+.feature-text {
+  font-family: "Segoe WP Light", serif;
+  font-size: 27px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.feature-item.better-design {
+  width: 340px;
+}
+
+.feature-item.better-design img {
+  margin: 61px 0 9px 113px;
+}
+
+.feature-item.better-design span {
+  margin-left: 87px;
+}
+
+.feature-item.customise {
+  width: 338px;
+}
+
+.feature-item.customise img {
+  margin: 37px 0 13px 135px;
+}
+
+.feature-item.customise span {
+  margin-left: 110px;
+}
+
+.feature-item.its-free {
+  width: 339px;
+  border-right: 1px solid #d4d4d4;
+}
+
+.feature-item.its-free img {
+  margin: 54px 0 8px 119px;
+}
+
+.feature-item.its-free span {
+  margin-left: 113px;
+}
+
+@media (max-width: 640px) {
+  .features-section {
+    height: 174px;
+    box-shadow:
+      0 -5px rgba(255, 255, 255, 0.4),
+      0 -10px rgba(255, 255, 255, 0.4);
+  }
+
+  .feature-item {
+    border: 0;
+  }
+
+  .feature-item span {
+    font-size: 23px;
+  }
+
+  .feature-item.better-design img {
+    width: 89px;
+    height: 61px;
+    margin-top: 33px;
+    margin-left: 45px;
+  }
+
+  .feature-item.better-design span {
+    margin-top: 8px;
+    margin-left: 16px;
+  }
+
+  .feature-item.customise img {
+    width: 67px;
+    height: 61px;
+    margin-top: 36px;
+    margin-left: 81px;
+  }
+
+  .feature-item.customise span {
+    margin-left: 56px;
+  }
+
+  .feature-item.its-free img {
+    width: 68px;
+    height: 69px;
+    margin-top: 29px;
+    margin-left: 70px;
+  }
+
+  .feature-item.its-free span {
+    margin-top: 5px;
+    margin-left: 68px;
+  }
+}
+
+/* Main -> News */
+
+.news-section {
+  height: 509px;
+  background-image: url("assets/img/news/background.png");
+}
+
+.news-section > .wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 37px;
+  margin: 31px 0;
+  font-family: "PT Sans Regular", serif;
+  letter-spacing: 0.01em;
+}
+
+.news-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.news-items > div {
+  height: 232px;
+  background-color: #ec9e03;
+}
+
+.add {
+  transition: all 0.3s;
+}
+
+.add:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transform: scale(2);
+}
+
+.news-announcement {
+  width: 341px;
+}
+
+.news-announcement p {
+  margin: 15px 38px 0 31px;
+  font-family: "Segoe WP Light", serif;
+  font-size: 29px;
+  white-space: wrap;
+  color: white;
+}
+
+.news-announcement img {
+  position: absolute;
+  margin-left: 316px;
+  margin-top: 4px;
+}
+
+.news-twitter {
+  display: flex;
+  width: 329px;
+  margin-left: 34px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.news-twitter span {
+  margin-right: 18px;
+  margin-top: 11px;
+  font-family: "Segoe WP Light", serif;
+  font-size: 25px;
+  color: white;
+}
+
+.news-twitter .twitter {
+  margin-top: 15px;
+  margin-right: 83px;
+}
+
+.news-twitter .twitter-messages {
+  display: none;
+}
+
+.news-twitter .add {
+  margin-right: 9px;
+  margin-top: 17px;
+}
+
+.news-date {
+  width: 113px;
+  height: 86px;
+  background-color: #ddb101;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-date span {
+  font-family: "Segoe UI", serif;
+}
+
+.news-date span:nth-child(1) {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 51px;
+  line-height: 51px;
+  color: white;
+}
+
+.news-date span:nth-child(2) {
+  color: #b26529;
+  font-size: 21px;
+}
+
+.news-slider {
+  margin: 43px 0 0 74px;
+  width: 896px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-appearance: none;
+}
+
+.news-slider:focus {
+  outline: 0;
+}
+
+.news-slider::-webkit-slider-thumb {
+  width: 197px;
+  height: 15px;
+  color: transparent;
+  background-color: #d89d26;
+  border-radius: 10px;
+  -webkit-appearance: none;
+}
+
+@media (max-width: 640px) {
+  .news-date,
+  .news-title,
+  .news-slider,
+  .news-announcement img,
+  .news-twitter span,
+  .news-twitter img.add {
+    display: none;
+  }
+
+  .news-section {
+    background-color: white;
+    background-image: unset;
+    max-height: 480px;
+  }
+
+  .news-items {
+    flex-wrap: wrap;
+  }
+
+  .news-announcement {
+    width: 299px;
+    height: 232px;
+    margin: 9px;
+    margin-top: 7px;
+    word-break: break-all;
+  }
+
+  .news-video {
+    margin-top: 6px;
+  }
+
+  .news-twitter {
+    margin: 0;
+    width: 100%;
+    background-color: #f5c507;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .news-twitter img.twitter {
+    margin: 18px 0 0 52px;
+  }
+
+  .news-twitter img.twitter-messages {
+    display: block;
+    margin-left: 13px;
+    margin-top: 13px;
+  }
+}
+
+/* Main -> Advantages */
+
+.advantages-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 496px;
+  background-image: url("assets/img/advantages/background.png");
+}
+
+.advantages-title {
+  font-family: "PT Sans Regular", serif;
+  font-size: 43px;
+  text-transform: uppercase;
+  color: #f5c506;
+  letter-spacing: 0.01em;
+  margin-top: 35px;
+  margin-left: 4px;
+}
+
+.advantages-body {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.advantages-image {
+  margin-left: 138px;
+  margin-top: 2px;
+}
+
+.advantages-list {
+  margin-left: 80px;
+  margin-top: 70px;
+  padding: 0;
+  max-width: 380px;
+  list-style-type: none;
+}
+
+.advantages-item::before {
+  content: url("assets/img/advantages/list-style.png");
+}
+
+.advantages-item {
+  margin: 20px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  color: #a9a9a7;
+}
+
+.advantages-item span {
+  padding-left: 20px;
+}
+
+@media (max-width: 640px) {
+  .advantages-section {
+    height: 467px;
+    align-items: flex-start;
+    background-image: unset;
+    background-color: #474747;
+  }
+
+  .advantages-title {
+    margin-top: 32px;
+    margin-left: 18px;
+    font-size: 39px;
+    letter-spacing: 2.3px;
+  }
+
+  .advantages-list {
+    display: none;
+  }
+
+  .advantages-image {
+    margin-left: 26px;
+    margin-top: 32px;
+    width: 570px;
+    height: 296px;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 64px;
+  background-color: #4d4d4d;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.75);
+}
+
+.footer-company-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-company-image {
+  width: 54px;
+  height: 54px;
+  margin-top: 6px;
+  margin-left: 1px;
+}
+
+.footer-company-name {
+  margin-top: 10px;
+  margin-left: 6px;
+  color: white;
+  font-family: "Lucida Sans", serif;
+  font-size: 29px;
+  letter-spacing: 0.01em;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    height: 43px;
+  }
+
+  .footer-company-logo {
+    margin-left: 64px;
+  }
+
+  .footer-company-image {
+    width: 31px;
+    height: 30px;
+  }
+
+  .footer-company-name {
+    font-size: 17px;
+    margin-left: 8px;
+  }
+}
